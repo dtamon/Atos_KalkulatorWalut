@@ -11,7 +11,7 @@ public class Main {
         Calculator calculator = new Calculator(new File("eurofxref-daily.xml"));
         SwingUtilities.invokeLater(() -> GUI.showGUI(calculator));
 
-
+//  wersja konsolowa
 //        @SuppressWarnings("resource")
 //        Scanner scanner = new Scanner(System.in);
 //        double value;
