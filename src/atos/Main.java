@@ -12,27 +12,34 @@ public class Main {
         SwingUtilities.invokeLater(() -> GUI.showGUI(calculator));
 
 //  wersja konsolowa
-//        @SuppressWarnings("resource")
-//        Scanner scanner = new Scanner(System.in);
-//        double value;
-//        String currencyCode;
-//        boolean isCurrencyOk;
+        @SuppressWarnings("resource")
+        Scanner scanner = new Scanner(System.in);
+        double value = 0;
+        String currencyCode;
+        boolean isCurrencyOk = false, isValueOk = false;
 
 //        for (boolean b = true; b;) {
 //            System.out.print("Podaj kwotę w EUR: ");
-//            value = Double.parseDouble(scanner.nextLine());
+//            do {
+//                String val = scanner.nextLine();
+//                if (GUI.isNumeric(val)){
+//                    value = Double.parseDouble(val);
+//                    isValueOk = true;
+//                } else {
+//                    System.out.print("Kwota musi być liczbą!: ");
+//                }
+//            } while (!isValueOk);
 //
 //            System.out.println(calculator.getAllCurrencies());
 //            System.out.print("Wpisz kod waluty z podanych wyżej: ");
 //
-//            isCurrencyOk = true;
 //            do {
 //                currencyCode = scanner.nextLine();
 //
 //                if (calculator.getAllCurrencies().contains(currencyCode)) {
 //                    System.out.println("Wartośc po przeliczeniu na " + currencyCode + ": "
 //                            + calculator.getCalculatedValue(value, currencyCode));
-//                    isCurrencyOk = false;
+//                    isCurrencyOk = true;
 //                    System.out.print("Czy kontynuować? (T/N): ");
 //                    if(!scanner.nextLine().equals("T")) {
 //                        b = false;
@@ -41,7 +48,7 @@ public class Main {
 //                } else {
 //                    System.out.print("Wprowadz poprawny kod waluty: ");
 //                }
-//            } while (isCurrencyOk);
+//            } while (!isCurrencyOk);
 //        }
     }
 }

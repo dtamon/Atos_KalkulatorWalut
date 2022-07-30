@@ -42,6 +42,13 @@ class CalculatorTest {
         Assert.assertEquals(calculator.getCalculatedValue(10, "ZAR"), "171.35");
     }
 
+    @Test
+    public void shouldThrowNullPointException() {
+        Assert.assertThrows(NullPointerException.class, () -> {
+            calculator.getCalculatedValue(10, "PSD");
+        });
+    }
+
 
 
 }
