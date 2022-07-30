@@ -12,12 +12,12 @@ public class Main {
         SwingUtilities.invokeLater(() -> GUI.showGUI(calculator));
 
 //  wersja konsolowa
-        @SuppressWarnings("resource")
-        Scanner scanner = new Scanner(System.in);
-        double value = 0;
-        String currencyCode;
-        boolean isCurrencyOk = false, isValueOk = false;
-
+//        @SuppressWarnings("resource")
+//        Scanner scanner = new Scanner(System.in);
+//        double value = 0;
+//        String currencyCode;
+//        boolean isCurrencyOk = false, isValueOk = false;
+//
 //        for (boolean b = true; b;) {
 //            System.out.print("Podaj kwotę w EUR: ");
 //            do {
